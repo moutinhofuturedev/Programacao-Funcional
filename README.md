@@ -12,7 +12,7 @@
 
 ## O que é Programação Funcional?
 
-`É um paradigma de programação como a Orientação a Objeto` 
+`É um paradigma de programação como a Orientação a Objeto`
 
 > **Funções**
 
