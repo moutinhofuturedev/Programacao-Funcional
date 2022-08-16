@@ -62,3 +62,29 @@ const sum = (n) => n + n
 
 sum(2) // 4
 ```
+
+## Imutabilidade
+
+- **uma variável não vai variar**
+- **se você precisar mudar uma variável, você não muda, você cria uma nova**
+
+```js
+const adress = {
+    city: 'Suzano',
+    road: 'Mario Freitas', 
+    number: 345
+}
+
+const rest = {
+    ...adress, 
+    city: 'Londres',
+    road: 'Oxford Street',
+    number: 123
+}
+
+// exemplo no React
+const [amount, setAmount] = useState(0)
+
+//amount = 0
+setAmount(2)
+```
