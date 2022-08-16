@@ -20,3 +20,36 @@
 - Abstrair um problema e isolar ele dentro da função
 - Não modificar dados fora dela
 - Pequenas e bem específicas no que fazem
+
+## Princípios
+
+PARADIGMA
+
+- programação imperativa
+- programação declarativa
+
+DADOS
+
+- imutabilidade
+- statelles
+
+FUNÇÕES
+
+- independentes
+- puras
+- higher-order
+- first-class
+- composição
+
+> Programação Imperativa
+<!-- Faça da seguinte forma -->
+
+```
+let number = 2
+
+function addition() {
+    return number + number
+}
+
+number = addition()
+```
