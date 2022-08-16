@@ -51,5 +51,14 @@ function addition() {
     return number + number
 }
 
-number = addition()
+number = addition() // 4
+```
+
+> Programação Declarativa
+<!-- O que fazer e não como fazer -->
+
+```js
+const sum = (n) => n + n
+
+sum(2) // 4
 ```
