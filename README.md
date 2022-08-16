@@ -69,22 +69,105 @@ sum(2) // 4
 - **se você precisar mudar uma variável, você não muda, você cria uma nova**
 
 ```js
-const adress = {
-    city: 'Suzano',
-    road: 'Mario Freitas', 
-    number: 345
+// Exemplo de imutabilidade em função
+let person = {
+    name: 'Paulo',
+    age: 26,
 }
 
-const rest = {
-    ...adress, 
-    city: 'Londres',
-    road: 'Oxford Street',
-    number: 123
+function changeData(name, age) {
+    let rest = {
+        ...person,
+        name: name,
+        age: age
+    }
+
+    return rest
 }
+
+console.log(changeData(person.name = 'Renan', person.age = 14)) 
+// Os dados do primeiro objeto são mantidos, e um segundo objeto é criado com as mesmas props e novos dados
 
 // exemplo no React
 const [amount, setAmount] = useState(0)
 
 //amount = 0
 setAmount(2)
+```
+
+## FUNÇÕES - **características das funções na programação funcional**
+
+[x] funções independentes
+[x] funções puras
+[x] first-class function
+[x] higher-order - function
+[x] composição de funções
+
+> Funções independentes
+
+- deve ter ao menos _um argumento_ passado
+- deverá retornar algo
+- nada que acontece dentro da função afeta o mundo externo: dados imutáveis/não guarda estado
+- não faz uso de métodos em loops
+
+```js
+const random = (number, MATH) => {
+    MATH.floor(MATH.random() * number)
+}
+
+// recursiva
+const factorial = (x) => {
+    if(x === 0) {
+        return 1
+    }
+
+    return x * factorial(x - 1) // 4*3*2*1 = 24
+}
+
+factorial(4) // resultado 24
+```
+
+> Funções Puras
+
+- não deverá _depender de nenhum dado externo_ a não ser o que for passsado como argumanto
+- não deverá sofrer _nenhuma interferência_ do mundo externo a ela
+- não terá _nenhum efeito colateral_ no seu código: Não irá modificar nenhum dado/não irá guardar nenhum estado
+
+```js
+// FUNÇÃO IMPURA
+// Exemplo 1. está dependendo de dado externo que não foi passado como parâmetro
+function calculateCircunference(radius) {
+    return MATH.PI * (radius + redius)
+}
+
+// Exemplo 2. está alterando um dado externo (isso não pode acontecer)
+const person = {
+    name: 'John'
+    age: 36,
+}
+// este tipo de função impura não pode acontecer
+function changeName(name) {
+    return person.name = name
+}
+
+// FUNÇÃO PURA
+// Exemplo 1.
+function calculateCircunference(pi, radius) { // 
+    return pi * (redius + radius) // os dois argumentos são passados para que haja os dois parâ metros
+}
+
+// com arrow function
+const calcultaCircunference = (pi, radius) => {
+    return pi * (redius + radius)
+}
+
+// Exemplo 2. 
+const person = {
+    name: 'John'
+    age: 36,
+}
+
+function changeName(person, name) {
+    return ({...person, name})
+}
 ```
