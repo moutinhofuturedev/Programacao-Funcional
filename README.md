@@ -105,10 +105,13 @@ setAmount(2)
 
 > Funções independentes
 
-- deve ter ao menos _um argumento_ passado
-- deverá retornar algo
-- nada que acontece dentro da função afeta o mundo externo: dados imutáveis/não guarda estado
-- não faz uso de métodos em loops
+🛠 deve ter ao menos _um argumento_ passado
+
+🛠 deverá retornar algo
+
+🛠 nada que acontece dentro da função afeta o mundo externo: dados imutáveis/não guarda estado
+
+🛠 não faz uso de métodos em loops
 
 ```js
 const random = (number, MATH) => {
@@ -129,9 +132,11 @@ factorial(4) // resultado 24
 
 > Funções Puras
 
-- não deverá _depender de nenhum dado externo_ a não ser o que for passsado como argumanto
-- não deverá sofrer _nenhuma interferência_ do mundo externo a ela
-- não terá _nenhum efeito colateral_ no seu código: Não irá modificar nenhum dado/não irá guardar nenhum estado
+🛠 não deverá _depender de nenhum dado externo_ a não ser o que for passsado como argumanto
+
+🛠 não deverá sofrer _nenhuma interferência_ do mundo externo a ela
+
+🛠 não terá _nenhum efeito colateral_ no seu código: Não irá modificar nenhum dado/não irá guardar nenhum estado
 
 ```js
 // FUNÇÃO IMPURA
