@@ -44,7 +44,7 @@ FUNÇÕES
 > Programação Imperativa
 <!-- Faça da seguinte forma -->
 
-```
+```js
 let number = 2
 
 function addition() {
