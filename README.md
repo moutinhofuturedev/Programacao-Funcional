@@ -176,3 +176,15 @@ function changeName(person, name) {
     return ({...person, name})
 }
 ```
+
+### First Class Function
+
+- Podem estar em qualquer lugar, inclusive como parâmentro de outras funções
+- A função poderá ser entendida como uma variável
+
+```js
+const sayMyName = () => console.log('Hey Paulo')
+const runFunction = (fn) => fn()
+
+runFunction(sayMyName) // Hey Paulo
+```
