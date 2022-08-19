@@ -24,3 +24,8 @@ const rest = {
     road: 'Oxford Street',
     number: 123
 }
+
+const sayMyName = () => console.log('Yes Paulo')
+const runFunction = (fn) => fn()
+
+console.log(runFunction(sayMyName))
