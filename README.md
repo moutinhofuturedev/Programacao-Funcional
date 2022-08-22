@@ -208,7 +208,7 @@ const getMultiplication = numbers.map(multiplyNumbers)
 
 🛠 Um encadeamento de funções
 
-🛠 Uma função que retorna um dado e vai para outra função, que retorna um dado e e vai para outra função, e retorna...
+🛠 Uma função que retorna um dado e vai para outra função, que retorna um dado e vai para outra função, e retorna...
 
 ```js
 // Exemplo:
