@@ -9,7 +9,7 @@ const factorial = (x) => {
     return x * factorial(x - 1)
 }
 
-console.log(factorial(8))
+console.log(factorial(4))
 
 // Exemplo de imutabilidade
 const adress = {

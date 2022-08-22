@@ -188,3 +188,18 @@ const runFunction = (fn) => fn()
 
 runFunction(sayMyName) // Hey Paulo
 ```
+
+## Function Higher-order
+
+🛠 Funções que recebem funções como argumentos
+
+🛠 Funções que poderão retornar outra função
+
+<!-Exemplo com .map() JS-!>
+
+```js
+const numbers = [2, 4, 8, 12]
+const multiplyNumbers = (x) => x * x
+
+const getMultiplication = numbers.map(multiplyNumbers)
+```
