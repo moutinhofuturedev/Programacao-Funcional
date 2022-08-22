@@ -203,3 +203,17 @@ const multiplyNumbers = (x) => x * x
 
 const getMultiplication = numbers.map(multiplyNumbers)
 ```
+
+## Composição de funções
+
+🛠 Um encadeamento de funções
+
+🛠 Uma função que retorna um dado e vai para outra função, que retorna um dado e e vai para outra função, e retorna...
+
+```js
+// Exemplo:
+const persons = ['Paulo', 'Rayanne', 'Reinaldo', 'Franciele']
+
+const upperCasePeopleThatStartsWithR = persons.filter(person => person.startsWith('R'))
+.map(rperson => rperson.toUpperCase()) // result => 'RAYANNE, REINALDO'
+```

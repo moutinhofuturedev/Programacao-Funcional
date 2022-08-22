@@ -29,3 +29,10 @@ const sayMyName = () => console.log('Yes Paulo')
 const runFunction = (fn) => fn()
 
 console.log(runFunction(sayMyName))
+
+// Composição de function
+const persons = ['Paulo', 'Daiana', 'Daniel', 'Renan']
+
+const upperCasePeopleThatStartsWithD = persons.filter(person => person.startsWith('D')).map(dperson => dperson.toUpperCase())
+
+console.log(upperCasePeopleThatStartsWithD)
